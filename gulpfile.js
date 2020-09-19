@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     concatCss = require('gulp-concat-css'),
     cssnano = require('gulp-cssnano'),
     concat = require('gulp-concat'),
-    purgecss = require('gulp-purgecss');
+    purgecss = require('gulp-purgecss')
 
 gulp.task('dev-css', function () {
     return gulp.src('./src/css/page.css')
@@ -17,7 +17,7 @@ gulp.task('dev-css', function () {
         discardComments: {removeAll: true}
       }))
       .pipe(gulp.dest('./static/css/'))
-});
+})
 
 gulp.task('build-css', function () {
     return gulp.src('./src/css/page.css')
@@ -37,12 +37,12 @@ gulp.task('build-css', function () {
         discardComments: {removeAll: true}
       }))
       .pipe(gulp.dest('./static/css/'))
-});
+})
 
 gulp.task('watchcss', function() {
-  gulp.watch('./src/css/*.css', gulp.series('procss'));
-});
+  gulp.watch('./src/css/*.css', gulp.series('procss'))
+})
 
-gulp.task('dev', gulp.series('dev-css'));
+gulp.task('dev', gulp.series('dev-css'))
 
-gulp.task('build', gulp.series('build-css'));
+gulp.task('build', gulp.series('build-css'))
