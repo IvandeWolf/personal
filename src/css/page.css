@@ -3,7 +3,3 @@
 @tailwind components;
 
 @tailwind utilities;
-
-:hover {
-    transition: all 350ms ease;
-}
