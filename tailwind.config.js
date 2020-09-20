@@ -1,8 +1,19 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        '16': '4rem'
+      },
+      fontFamily: {
+        'title': ['Permanent\\ Marker', 'cursive'],
+        'body': ['Montserrat', 'sans-serif'],
+        'caveat': ['Caveat', 'cursive']
+      }
+    },
   },
-  variants: {},
+  variants: {
+    opacity: ['group-hover']
+  },
   plugins: [],
 }

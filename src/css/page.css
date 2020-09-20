@@ -1,5 +1,7 @@
 @tailwind base;
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Permanent+Marker&display=swap');
+
 @tailwind components;
 
 @tailwind utilities;

@@ -4,7 +4,7 @@
   "private": true,
   "description": "A boilerplate for a Hugo site based on TailwindCSS",
   "scripts": {
-    "start": "gulp dev && hugo server",
+    "start": "gulp dev && hugo server -b '192.168.1.36' --bind '192.168.1.36'",
     "deploy": "gulp build && hugo --minify"
   },
   "repository": {

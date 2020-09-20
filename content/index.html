@@ -5,8 +5,144 @@ draft: false
 layout: default
 ---
 
-<div class="flex flex-col min-h-screen w-full justify-center items-center bg-gray-900">
-  <h1 class="text-5xl font-thin text-white border-b border-red-600">
-    Ivan <span class="font-extrabold">de Wolf</span>
-  </h1>
+<!-- Welcome -->
+<div class="grid grid-cols-5 w-full rounded-b-16 bg-gray-900 overflow-hidden">
+  <div class="col-span-2 flex items-end">
+    <img src="/img/me.png" alt="Profile photo of me">
+  </div>
+  <div class="col-span-3 flex flex-col justify-center items-start">
+    <div class="flex flex-col justify-center items-start">
+      <h1 class="text-white text-3xl font-title border-b border-red-600">Ivan de Wolf</h1>
+      <span class="text-gray-600 text-sm self-center">Computer Science</span>
+    </div>
+  </div>
+</div>
+
+<!-- Quote -->
+<div class="text-center px-8 my-16">
+  <p class="text-gray-600 text-2xl font-light font-caveat">"Venture outside your comfort zone. The rewards are worth it." <span class="text-red-600">-</span> Rapunzel</p>
+</div>
+
+<!-- Main Cards -->
+<div class="grid grid-cols-2 gap-8 m-4">
+  <div class="bg-gray-100 rounded-lg p-4">
+    <h3 class="text-lg text-red-600">Work</h3>
+    <p class="text-xs text-gray-600">Check out my work experiences.</p>
+    <button class="text-xs rounded-md bg-gray-800 hover:bg-gray-700 text-white px-2 py-1 mt-6 uppercase transition ease-in-out duration-100">See Work</button>
+  </div>
+
+  <div class="bg-gray-100 rounded-lg p-4">
+    <h3 class="text-lg text-red-600">Projects</h3>
+    <p class="text-xs text-gray-600">These are projects I've worked on.</p>
+    <button class="text-xs rounded-md bg-gray-800 hover:bg-gray-700 text-white px-2 py-1 mt-6 uppercase transition ease-in-out duration-100">See Projects</button>
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="p-4 pb-2 mt-20 flex justify-between">
+  <h2 class="text-lg font-bold text-gray-800">My Projects</h2>
+  <a href="/projects" class="text-red-600 hover:text-red-500 text-sm transition ease-in-out duration-100">See all</a>
+</div>
+<div class="p-4 pt-0 space-y-12">
+  <div class="flex flex-col">
+    <a href="https://tlc-uva.github.io/educational-redesign-aid/" class="group relative flex flex-col items-center justify-center h-48 bg-gray-900 rounded-lg p-4 overflow-hidden">
+      <img src="/img/era.png" alt="ERA Tools" class="absolute top-0 left-0 object-contain opacity-75 group-hover:opacity-25 transition ease-in-out duration-200">
+      <h3 class="flex text-lg font-bold text-white opacity-0 group-hover:opacity-100 transition ease-in-out duration-100">
+        Educational Redesign Aid
+        <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+        </svg>
+      </h3>
+    </a>
+    <div class="flex justify-between items-center text-gray-800 mt-2">
+      <a href="https://github.com/TLC-UvA/educational-redesign-aid" class="flex items-center">
+        <svg class="w-6 h-6 mr-1" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+        </svg>
+        GitHub
+      </a>
+      <a href="/projects#era" class="rounded-md bg-gray-800 hover:bg-gray-700 text-white py-1 px-2 transition ease-in-out duration-100">Read More</a>
+    </div>
+  </div>
+
+  <div class="flex flex-col">
+    <a href="https://ticketvise.com/" class="group relative flex flex-col items-center justify-center h-48 bg-gray-900 rounded-lg p-4 overflow-hidden">
+      <img src="/img/ticketvise.png" alt="ERA Tools" class="absolute top-0 left-0 object-contain opacity-75 group-hover:opacity-25 transition ease-in-out duration-200">
+      <h3 class="flex text-lg font-bold text-white opacity-0 group-hover:opacity-100 transition ease-in-out duration-100">
+        TicketVise
+        <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+        </svg>
+      </h3>
+    </a>
+    <div class="flex justify-between items-center text-gray-800 mt-2">
+      <a href="https://github.com/TicketVise/ticketvise" class="flex items-center">
+        <svg class="w-6 h-6 mr-1" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+        </svg>
+        GitHub
+      </a>
+      <a href="/projects#ticketvise" class="rounded-md bg-gray-800 hover:bg-gray-700 text-white py-1 px-2 transition ease-in-out duration-100">Read More</a>
+    </div>
+  </div>
+
+  <div class="flex flex-col">
+    <a href="https://weerwolven.app/" class="group relative flex flex-col items-center justify-center h-48 bg-gray-900 rounded-lg p-4 overflow-hidden">
+      <img src="/img/weerwolven.png" alt="ERA Tools" class="absolute top-0 left-0 object-contain opacity-75 group-hover:opacity-25 transition ease-in-out duration-200">
+      <h3 class="flex text-lg font-bold text-white opacity-0 group-hover:opacity-100 transition ease-in-out duration-100">
+        Weerwolven
+        <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+        </svg>
+      </h3>
+    </a>
+    <div class="flex justify-between items-center text-gray-800 mt-2">
+      <p></p>
+      <a href="/projects#weerwolven" class="rounded-md bg-gray-800 hover:bg-gray-700 text-white py-1 px-2 transition ease-in-out duration-100">Read More</a>
+    </div>
+  </div>
+</div>
+
+<!-- Work -->
+<div class="p-4 pb-2 mt-20 flex justify-between">
+  <h2 class="text-lg font-bold text-gray-800">Work Experiences</h2>
+  <a href="/work" class="text-red-600 hover:text-red-500 text-sm transition ease-in-out duration-100">See all</a>
+</div>
+<div class="p-4 pt-0 space-y-6">
+  <div class="flex flex-col">
+    <div class="flex flex-col bg-gray-900 text-white rounded-lg p-4 overflow-hidden">
+      <h3 class="text-xl">TicketVise</h3>
+      <span class="text-xs text-gray-400">Co-Founder</span>
+      <p class="text-sm">Started this company with two friends after a school project.</p>
+      <a href="https://ticketvise.com" class="mb-2 hover:underline text-gray-200 text-sm">ticketvise.com</a>
+      <div class="flex justify-between items-center text-gray-300">
+        <span class="text-sm">jul. 2020 - Now</span>
+        <a href="https://tlc-uva.github.io/educational-redesign-aid/">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col">
+    <div class="flex flex-col text-gray-900 rounded-lg p-4 overflow-hidden">
+      <h3 class="text-xl">University of Amsterdam</h3>
+      <span class="text-xs text-gray-700">Tutor and Teaching Assistant</span>
+      <p class="text-sm">Mentoring a group of 15 students in their academic skills and assisting for different classes.</p>
+      <div class="flex justify-between items-center text-gray-600">
+        <span class="text-sm">aug. 2019 - Now</span>
+        <a href="https://tlc-uva.github.io/educational-redesign-aid/">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col">
+    <div class="flex flex-col bg-gray-900 text-white rounded-lg p-4 overflow-hidden">
+      <h3 class="text-xl">Circle Leisure Development</h3>
+      <span class="text-xs text-gray-400">Software Development</span>
+      <p class="text-sm">Programmed several escaperooms using a Raspberry Pi, Arduino & different sensors.</p>
+      <div class="flex justify-between items-center text-gray-300">
+        <span class="text-sm">jan. 2017 - aug. 2019</span>
+        <a href="https://tlc-uva.github.io/educational-redesign-aid/">Read More</a>
+      </div>
+    </div>
+  </div>
 </div>
